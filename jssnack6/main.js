@@ -3,7 +3,12 @@ dove N è un numero indicato dall’utente. */
 
 
 const userNumber = Number(prompt("Inserisci un numero"))
-console.log(userNumber**3);
+let i = 0
+while (i < userNumber) {
+    i++
+    console.log(i**3);
+}
+
 
 
 
