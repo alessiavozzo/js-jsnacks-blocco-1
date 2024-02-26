@@ -1,23 +1,22 @@
-/* In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby, chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa */
+/* Il software deve chiedere per 10 volte all’utente di inserire un numero.
+Il programma stampa la somma di tutti i numeri inseriti. */
 
-const invitedList = ["Mario","Gesù","Piero","Martino","Pio","Alessia"];
-
-const userName = prompt("Inserisci il tuo nome")
-
-let partyAccess = false
-let returnMessage;
-
-for (let i = 0; i<invitedList.length; i++){
-    if(userName === invitedList[i]){
-        partyAccess = true  
-    }
+let numbers = [];
+let sum = 0
+for (let i = 0; i < 10; i++) {
+    const userNumber = Number(prompt("Inserisci il numero"));
+    numbers.push(userNumber);
+    sum += numbers[i];
 }
+console.log(sum);
 
-if(partyAccess === true){
-    returnMessage = "You can come in"
-    console.log(returnMessage);
+let numbers2 = [];
+let i = 0
+let sum2 = 0;
+while (i < 10) {
+    const userNumber2 = Number(prompt("Inserisci il numero"));
+    numbers2.push(userNumber2);
+    sum2+= numbers2[i]
+    i++
 }
-else{
-    returnMessage = "NO."
-    console.log(returnMessage);
-}
+console.log(sum2);
