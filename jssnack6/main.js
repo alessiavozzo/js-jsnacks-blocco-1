@@ -10,7 +10,8 @@ while (i < userNumber) {
 }
 
 
+const userNumber2 = Number(prompt("Numero"))
+for (let i = 0; i <= userNumber2; i++) {  
 
-
-
-
+    console.log(i**3);
+}
